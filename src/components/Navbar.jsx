@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -5,18 +6,18 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const navLinks = [
-    { name: 'হোম', path: '/' },
-    { name: 'কোর্স', path: '/courses' },
-    { name: 'ক্যাটাগরি', path: '/categories' },
-    { name: 'ইনস্ট্রাক্টর', path: '/instructors' },
-    { name: 'ব্লগ', path: '/blog' },
-    { name: 'বিনামূল্যে শিখুন', path: '/free-learning' },
-    { name: 'যোগাযোগ', path: '/contact' },
+    { name: 'Home', path: '/' },
+    { name: 'Courses', path: '/courses' },
+    { name: 'Categories', path: '/categories' },
+    { name: 'Instructors', path: '/instructors' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'Free Learning', path: '/free-learning' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   const categories = [
-    'কৃষি', 'প্রযুক্তি', 'একাডেমিক শিক্ষা', 'দক্ষতা উন্নয়ন', 
-    'ব্যবসা ও উদ্যোক্তা', 'চাকরি প্রস্তুতি'
+    'Agriculture', 'Technology', 'Academic Education', 'Skill Development', 
+    'Business & Entrepreneurship', 'Job Preparation'
   ];
 
   return (
@@ -42,7 +43,7 @@ const Navbar = () => {
                   boxShadow: '0 4px 12px rgba(79, 70, 229, 0.3)'
                 }}
               >
-                <span className="font-bold text-lg text-white">শি</span>
+                <span className="font-bold text-lg text-white">Sh</span>
               </div>
               <div>
                 <h1 
@@ -52,7 +53,7 @@ const Navbar = () => {
                     textShadow: '0 1px 2px rgba(255, 255, 255, 0.5)'
                   }}
                 >
-                  শিখন
+                  Shikkhon
                 </h1>
                 <p className="text-xs" style={{ color: '#6b7280' }}>E-Learning</p>
               </div>
@@ -66,8 +67,8 @@ const Navbar = () => {
                   to={link.path}
                   className="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/20"
                   style={{ 
-                    color: link.name === 'হোম' ? '#4F46E5' : '#374151',
-                    fontWeight: link.name === 'হোম' ? '600' : '500'
+                    color: link.name === 'Home' ? '#4F46E5' : '#374151',
+                    fontWeight: link.name === 'Home' ? '600' : '500'
                   }}
                 >
                   {link.name}
@@ -83,7 +84,7 @@ const Navbar = () => {
                     color: '#374151'
                   }}
                 >
-                  ক্যাটাগরি
+                  Categories
                   <svg 
                     className="w-3.5 h-3.5" 
                     fill="none" 
@@ -158,7 +159,7 @@ const Navbar = () => {
                   color: '#374151'
                 }}
               >
-                লগইন
+                Login
               </Link>
               
               {/* Updated Register Button with Link */}
@@ -170,7 +171,7 @@ const Navbar = () => {
                   boxShadow: '0 2px 8px rgba(79, 70, 229, 0.3)'
                 }}
               >
-                রেজিস্টার
+                Register
               </Link>
             </div>
 
@@ -214,7 +215,7 @@ const Navbar = () => {
                     to={link.path}
                     className="px-3 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-all duration-300"
                     style={{ 
-                      color: link.name === 'হোম' ? '#4F46E5' : '#374151'
+                      color: link.name === 'Home' ? '#4F46E5' : '#374151'
                     }}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -224,7 +225,7 @@ const Navbar = () => {
                 
                 {/* Mobile Categories */}
                 <div className="px-3 py-2">
-                  <h3 className="font-bold mb-2 text-sm" style={{ color: '#4F46E5' }}>ক্যাটাগরি</h3>
+                  <h3 className="font-bold mb-2 text-sm" style={{ color: '#4F46E5' }}>Categories</h3>
                   <div className="grid grid-cols-2 gap-1.5">
                     {categories.map((cat, idx) => (
                       <a 
@@ -267,7 +268,7 @@ const Navbar = () => {
                       3
                     </span>
                   </div>
-                  <span>কার্ট</span>
+                  <span>Cart</span>
                 </button>
                 
                 {/* Updated Mobile Auth Buttons with Links */}
@@ -281,7 +282,7 @@ const Navbar = () => {
                     }}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    লগইন
+                    Login
                   </Link>
                   <Link
                     to="/register"
@@ -291,7 +292,7 @@ const Navbar = () => {
                     }}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    রেজিস্টার
+                    Register
                   </Link>
                 </div>
               </div>

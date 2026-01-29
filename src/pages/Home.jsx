@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 
 const Home = () => {
@@ -39,101 +40,101 @@ const Home = () => {
   }, []);
 
   const categories = [
-    { icon: '🌾', name: 'কৃষি', count: 156 },
-    { icon: '💻', name: 'প্রযুক্তি', count: 342 },
-    { icon: '📚', name: 'শিক্ষা', count: 289 },
-    { icon: '🔧', name: 'দক্ষতা', count: 187 },
-    { icon: '💼', name: 'ব্যবসা', count: 124 },
-    { icon: '🎯', name: 'চাকরি', count: 231 },
+    { icon: '🌾', name: 'Agriculture', count: 156 },
+    { icon: '💻', name: 'Technology', count: 342 },
+    { icon: '📚', name: 'Education', count: 289 },
+    { icon: '🔧', name: 'Skills', count: 187 },
+    { icon: '💼', name: 'Business', count: 124 },
+    { icon: '🎯', name: 'Jobs', count: 231 },
   ];
 
   const courses = [
     { 
-      title: 'ডিজিটাল মার্কেটিং', 
-      instructor: 'আহমেদ রাসেল', 
+      title: 'Digital Marketing', 
+      instructor: 'Ahmed Rasel', 
       rating: 4.8, 
       students: 1250, 
-      price: '৳ ২,৫০০', 
-      discount: '৳ ৩,৫০০', 
+      price: '৳ 2,500', 
+      discount: '৳ 3,500', 
       thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop',
-      duration: '১২ ঘণ্টা',
+      duration: '12 Hours',
       lessons: 24
     },
     { 
-      title: 'কৃষি ব্যবস্থাপনা', 
-      instructor: 'ড. ফারহানা ইসলাম', 
+      title: 'Agriculture Management', 
+      instructor: 'Dr. Farhana Islam', 
       rating: 4.9, 
       students: 890, 
-      price: 'বিনামূল্যে', 
+      price: 'Free', 
       discount: null, 
       thumbnail: 'https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=400&h=250&fit=crop',
-      duration: '৮ ঘণ্টা',
+      duration: '8 Hours',
       lessons: 16
     },
     { 
-      title: 'ফ্রিল্যান্সিং গাইড', 
-      instructor: 'জুবায়ের হোসেন', 
+      title: 'Freelancing Guide', 
+      instructor: 'Zubayer Hossain', 
       rating: 4.7, 
       students: 2100, 
-      price: '৳ ১,২০০', 
-      discount: '৳ ২,০০০', 
+      price: '৳ 1,200', 
+      discount: '৳ 2,000', 
       thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop',
-      duration: '১৫ ঘণ্টা',
+      duration: '15 Hours',
       lessons: 30
     },
     { 
-      title: 'প্রোগ্রামিং বেসিক', 
-      instructor: 'তানভীর হাসান', 
+      title: 'Programming Basics', 
+      instructor: 'Tanvir Hasan', 
       rating: 4.6, 
       students: 1670, 
-      price: '৳ ১,৮০০', 
-      discount: '৳ ২,৫০০', 
+      price: '৳ 1,800', 
+      discount: '৳ 2,500', 
       thumbnail: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&h=250&fit=crop',
-      duration: '২০ ঘণ্টা',
+      duration: '20 Hours',
       lessons: 40
     },
   ];
 
   const instructors = [
     { 
-      name: 'ড. সুমাইয়া খান', 
-      expertise: 'কৃষি বিশেষজ্ঞ', 
+      name: 'Dr. Sumaiya Khan', 
+      expertise: 'Agriculture Specialist', 
       students: 5000, 
       courses: 12, 
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop',
-      experience: '১০ বছর'
+      experience: '10 Years'
     },
     { 
-      name: 'রাফি আহমেদ', 
-      expertise: 'সফটওয়্যার ইঞ্জিনিয়ার', 
+      name: 'Rafi Ahmed', 
+      expertise: 'Software Engineer', 
       students: 12000, 
       courses: 25, 
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop',
-      experience: '৮ বছর'
+      experience: '8 Years'
     },
     { 
-      name: 'নিশাত জাহান', 
-      expertise: 'ব্যবসা পরামর্শক', 
+      name: 'Nishat Jahan', 
+      expertise: 'Business Consultant', 
       students: 7500, 
       courses: 18, 
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop',
-      experience: '১২ বছর'
+      experience: '12 Years'
     },
     { 
-      name: 'আনিসুর রহমান', 
-      expertise: 'এডুকেশনাল টেকনোলজি', 
+      name: 'Anisur Rahman', 
+      expertise: 'Educational Technology', 
       students: 9200, 
       courses: 21, 
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop',
-      experience: '৬ বছর'
+      experience: '6 Years'
     },
   ];
 
   const stats = [
-    { number: '৫০,০০০+', label: 'সক্রিয় শিক্ষার্থী', icon: '👨‍🎓' },
-    { number: '১,২০০+', label: 'কোর্স', icon: '📚' },
-    { number: '২০০+', label: 'ইন্সট্রাক্টর', icon: '👨‍🏫' },
-    { number: '৯৫%', label: 'সন্তুষ্টি হার', icon: '⭐' },
+    { number: '50,000+', label: 'Active Students', icon: '👨‍🎓' },
+    { number: '1,200+', label: 'Courses', icon: '📚' },
+    { number: '200+', label: 'Instructors', icon: '👨‍🏫' },
+    { number: '95%', label: 'Satisfaction Rate', icon: '⭐' },
   ];
 
   return (
@@ -165,15 +166,15 @@ const Home = () => {
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 mb-8 shadow-sm border border-gray-200">
               <div className="w-2 h-2 rounded-full animate-ping" style={{ backgroundColor: '#4F46E5' }}></div>
               <span className="text-sm font-medium" style={{ color: '#4F46E5' }}>
-                🇧🇩 বাংলাদেশের সবচেয়ে বড় অনলাইন লার্নিং প্লাটফর্ম
+                🇧🇩 Largest Online Learning Platform in Bangladesh
               </span>
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              <span className="block">বাংলায় শিখুন,</span>
+              <span className="block">Learn in Bengali,</span>
               <span className="block mt-2">
                 <span style={{ color: '#4F46E5' }}>
-                  দক্ষ হয়ে উঠুন
+                  Become Skilled
                 </span>
               </span>
             </h1>
@@ -181,17 +182,17 @@ const Home = () => {
             <div className="h-20 mb-8">
               <p className="text-xl md:text-2xl text-gray-700 mb-4">
                 <span className="typing-effect">
-                  ১০০০+ বাংলা কোর্সে যুক্ত হোন, শিখুন বিশেষজ্ঞদের থেকে, গড়ে তুলুন আপনার ক্যারিয়ার
+                  Join 1000+ Bengali courses, learn from experts, build your career
                 </span>
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-2xl mx-auto">
               {[
-                { number: '১০০০+', label: 'বাংলা কোর্স', color: '#4F46E5' },
-                { number: '৫০,০০০+', label: 'সক্রিয় শিক্ষার্থী', color: '#3B82F6' },
-                { number: '২০০+', label: 'বিশেষজ্ঞ ইনস্ট্রাক্টর', color: '#10B981' },
-                { number: '৯৫%', label: 'সন্তুষ্টি হার', color: '#EC4899' }
+                { number: '1000+', label: 'Bengali Courses', color: '#4F46E5' },
+                { number: '50,000+', label: 'Active Students', color: '#3B82F6' },
+                { number: '200+', label: 'Expert Instructors', color: '#10B981' },
+                { number: '95%', label: 'Satisfaction Rate', color: '#EC4899' }
               ].map((stat, index) => (
                 <div key={index} 
                      className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
@@ -211,7 +212,7 @@ const Home = () => {
                 }}
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
-                  কোর্স দেখুন
+                  View Courses
                   <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                   </svg>
@@ -232,14 +233,14 @@ const Home = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  ফ্রি শিখুন
+                  Learn Free
                 </span>
                 <span className="absolute inset-0 bg-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
               </button>
             </div>
 
             <div className="mt-16 pt-8 border-t border-gray-200">
-              <p className="text-gray-600 mb-4">আমাদের বিশ্বাস করেন</p>
+              <p className="text-gray-600 mb-4">Trusted by</p>
               <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
                 <div className="text-2xl">🏢</div>
                 <div className="text-2xl">🏛️</div>
@@ -269,8 +270,8 @@ const Home = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">ক্যাটাগরি অনুসারে ব্রাউজ করুন</h2>
-            <p className="text-gray-600">আপনার পছন্দের বিষয় নির্বাচন করুন</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Browse by Category</h2>
+            <p className="text-gray-600">Select your preferred subject</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -282,7 +283,7 @@ const Home = () => {
               >
                 <div className="text-4xl mb-3">{category.icon}</div>
                 <h3 className="font-bold text-gray-900 mb-1">{category.name}</h3>
-                <p className="text-gray-600 text-sm">{category.count} কোর্স</p>
+                <p className="text-gray-600 text-sm">{category.count} Courses</p>
               </div>
             ))}
           </div>
@@ -293,14 +294,14 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">জনপ্রিয় কোর্স</h2>
-              <p className="text-gray-700">এখন সবচেয়ে বেশি শিক্ষার্থী যুক্ত হচ্ছে</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">Popular Courses</h2>
+              <p className="text-gray-700">Most students are joining now</p>
             </div>
             <button 
               className="font-medium hover:underline flex items-center gap-1 group"
               style={{ color: '#4F46E5' }}
             >
-              সব দেখুন 
+              View All 
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
               </svg>
@@ -316,19 +317,19 @@ const Home = () => {
                     alt={course.title}
                     className="w-full h-48 object-cover"
                   />
-                  {course.price === 'বিনামূল্যে' && (
+                  {course.price === 'Free' && (
                     <div 
                       className="absolute top-3 left-3 text-white px-3 py-1 rounded text-sm font-medium shadow-md"
                       style={{ backgroundColor: '#4F46E5' }}
                     >
-                      ফ্রি
+                      Free
                     </div>
                   )}
                 </div>
                 
                 <div className="p-5">
                   <h3 className="font-bold text-gray-900 text-lg mb-2 hover:text-indigo-600 transition-colors cursor-pointer">{course.title}</h3>
-                  <p className="text-gray-600 text-sm mb-3">ইন্সট্রাক্টর: {course.instructor}</p>
+                  <p className="text-gray-600 text-sm mb-3">Instructor: {course.instructor}</p>
                   
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-1">
@@ -337,7 +338,7 @@ const Home = () => {
                       <span className="text-gray-500 text-sm">({course.students.toLocaleString()})</span>
                     </div>
                     <div className="text-gray-500 text-sm">
-                      {course.duration} • {course.lessons} পাঠ
+                      {course.duration} • {course.lessons} Lessons
                     </div>
                   </div>
                   
@@ -357,7 +358,7 @@ const Home = () => {
                       className="px-4 py-2 rounded text-sm font-medium text-white hover:shadow-md transition-shadow"
                       style={{ backgroundColor: '#4F46E5' }}
                     >
-                      বিস্তারিত
+                      Details
                     </button>
                   </div>
                 </div>
@@ -370,8 +371,8 @@ const Home = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">আমাদের ইন্সট্রাক্টর</h2>
-            <p className="text-gray-600">বিশেষজ্ঞদের কাছ থেকে সরাসরি শিখুন</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Instructors</h2>
+            <p className="text-gray-600">Learn directly from experts</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -398,16 +399,16 @@ const Home = () => {
                 >
                   {instructor.expertise}
                 </p>
-                <p className="text-gray-500 text-sm mb-4">{instructor.experience} অভিজ্ঞতা</p>
+                <p className="text-gray-500 text-sm mb-4">{instructor.experience} Experience</p>
                 
                 <div className="flex justify-center gap-6 mb-4">
                   <div className="text-center">
                     <div className="font-bold text-gray-900">{instructor.students.toLocaleString()}+</div>
-                    <div className="text-gray-500 text-sm">শিক্ষার্থী</div>
+                    <div className="text-gray-500 text-sm">Students</div>
                   </div>
                   <div className="text-center">
                     <div className="font-bold text-gray-900">{instructor.courses}</div>
-                    <div className="text-gray-500 text-sm">কোর্স</div>
+                    <div className="text-gray-500 text-sm">Courses</div>
                   </div>
                 </div>
                 
@@ -415,7 +416,7 @@ const Home = () => {
                   className="w-full py-2 rounded text-sm font-medium border hover:bg-indigo-50 transition-colors"
                   style={{ borderColor: '#4F46E5', color: '#4F46E5' }}
                 >
-                  প্রোফাইল দেখুন
+                  View Profile
                 </button>
               </div>
             ))}
@@ -432,17 +433,17 @@ const Home = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="md:w-2/3">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  বিনামূল্যে শিখুন
+                  Learn for Free
                   <span 
                     className="block"
                     style={{ color: '#4F46E5' }}
                   >
-                    কোন খরচ ছাড়াই
+                    No Cost Required
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6">
-                  ১০০+ ফ্রি কোর্স থেকে বেসিক দক্ষতা অর্জন করুন। 
-                  শুরু করুন আজই, কোন পেমেন্টের প্রয়োজন নেই।
+                  Master basic skills from 100+ free courses. 
+                  Start today, no payment needed.
                 </p>
                 <button 
                   className="px-8 py-3 rounded-lg font-medium text-white hover:shadow-lg transition-shadow transform hover:-translate-y-0.5"
@@ -450,7 +451,7 @@ const Home = () => {
                     backgroundColor: '#4F46E5'
                   }}
                 >
-                  ফ্রি কোর্স দেখুন
+                  View Free Courses
                 </button>
               </div>
               
@@ -460,8 +461,8 @@ const Home = () => {
                   style={{ backgroundColor: 'rgb(233,231,253)' }}
                 >
                   <div className="text-5xl mb-4 animate-bounce">🎓</div>
-                  <div className="text-2xl font-bold text-gray-900 mb-2">১০০+ ফ্রি কোর্স</div>
-                  <div className="text-gray-700">বিনামূল্যে শেখার সুযোগ</div>
+                  <div className="text-2xl font-bold text-gray-900 mb-2">100+ Free Courses</div>
+                  <div className="text-gray-700">Free learning opportunity</div>
                 </div>
               </div>
             </div>
@@ -474,7 +475,7 @@ const Home = () => {
         className="fixed bottom-8 right-8 w-14 h-14 rounded-full shadow-lg z-50 flex items-center justify-center transition-all duration-300 opacity-0 scale-0 hover:scale-110 hover:shadow-xl group"
         style={{ backgroundColor: '#4F46E5' }}
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        aria-label="শীর্ষে যান"
+        aria-label="Scroll to top"
       >
         <svg className="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 100 100">
           <circle

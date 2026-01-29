@@ -72,7 +72,7 @@ const Login = () => {
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
         </svg>
-        <span className="text-gray-800">হোমে ফিরুন</span>
+        <span className="text-gray-800">Back to Home</span>
       </button>
 
       <div className="max-w-md w-full mx-4 relative z-10">
@@ -84,15 +84,15 @@ const Login = () => {
                    background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
                    boxShadow: '0 20px 60px rgba(79, 70, 229, 0.4)'
                  }}>
-              <span className="text-4xl font-bold text-white">শি</span>
+              <span className="text-4xl font-bold text-white">Sh</span>
               {/* Glow Effect */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-400 to-purple-400 opacity-30 blur-lg"></div>
             </div>
           </Link>
           <h1 className="text-4xl font-bold mb-3 text-gray-900 tracking-tight">
-            শিখন<span className="text-indigo-600">.</span>
+            Shikkhon<span className="text-indigo-600">.</span>
           </h1>
-          <p className="text-gray-700 text-lg">আপনার দক্ষতার যাত্রা শুরু করুন</p>
+          <p className="text-gray-700 text-lg">Start your skills journey</p>
         </div>
 
         {/* Glassmorphism Login Form */}
@@ -105,8 +105,8 @@ const Login = () => {
                  boxShadow: '0 25px 50px -12px rgba(79, 70, 229, 0.25)'
                }}>
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">লগইন করুন</h2>
-              <p className="text-gray-600">আপনার অ্যাকাউন্টে ফিরে আসুন</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">Login</h2>
+              <p className="text-gray-600">Return to your account</p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-7">
@@ -118,7 +118,7 @@ const Login = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                     </svg>
                   </div>
-                  <label className="text-sm font-medium text-gray-800">ইমেইল অ্যাড্রেস</label>
+                  <label className="text-sm font-medium text-gray-800">Email Address</label>
                 </div>
                 <input
                   type="email"
@@ -144,7 +144,7 @@ const Login = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                     </svg>
                   </div>
-                  <label className="text-sm font-medium text-gray-800">পাসওয়ার্ড</label>
+                  <label className="text-sm font-medium text-gray-800">Password</label>
                 </div>
                 <input
                   type="password"
@@ -189,7 +189,7 @@ const Login = () => {
                           </svg>
                         )}
                       </div>
-                      <span className="text-sm text-gray-800">আমাকে মনে রাখুন</span>
+                      <span className="text-sm text-gray-800">Remember me</span>
                     </label>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ const Login = () => {
                   className="text-sm font-medium transition-all duration-300 hover:text-indigo-700 hover:underline"
                   style={{ color: '#4F46E5' }}
                 >
-                  পাসওয়ার্ড ভুলে গেছেন?
+                  Forgot password?
                 </Link>
               </div>
 
@@ -212,7 +212,7 @@ const Login = () => {
                 }}
               >
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                  <span>লগইন করুন</span>
+                  <span>Login</span>
                   <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -226,7 +226,7 @@ const Login = () => {
                   <div className="w-full border-t" style={{ borderColor: 'rgba(79, 70, 229, 0.1)' }}></div>
                 </div>
                 <div className="relative flex justify-center">
-                  <span className="px-4 bg-white text-sm text-gray-500">অথবা সোশ্যাল মাধ্যমে লগইন করুন</span>
+                  <span className="px-4 bg-white text-sm text-gray-500">Or login with social media</span>
                 </div>
               </div>
 
@@ -264,13 +264,13 @@ const Login = () => {
               {/* Register Link */}
               <div className="text-center pt-6 border-t" style={{ borderColor: 'rgba(79, 70, 229, 0.1)' }}>
                 <p className="text-gray-700">
-                  নতুন ব্যবহারকারী?{' '}
+                  New user?{' '}
                   <Link
                     to="/register"
                     className="font-semibold transition-all duration-300 hover:text-indigo-700 hover:underline"
                     style={{ color: '#4F46E5' }}
                   >
-                    এখনই রেজিস্টার করুন
+                    Register now
                   </Link>
                 </p>
               </div>

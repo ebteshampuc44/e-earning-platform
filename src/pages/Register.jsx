@@ -38,12 +38,12 @@ const Register = () => {
   };
 
   const learningGoals = [
-    { value: 'career', label: 'ক্যারিয়ার উন্নয়ন', icon: '🚀' },
-    { value: 'skill', label: 'নতুন দক্ষতা অর্জন', icon: '🛠️' },
-    { value: 'business', label: 'ব্যবসা শুরু করা', icon: '💼' },
-    { value: 'hobby', label: 'শখের জন্য শেখা', icon: '🎨' },
-    { value: 'academic', label: 'একাডেমিক পড়াশোনা', icon: '📚' },
-    { value: 'freelance', label: 'ফ্রিল্যান্সিং শেখা', icon: '💻' },
+    { value: 'career', label: 'Career Development', icon: '🚀' },
+    { value: 'skill', label: 'Learn New Skills', icon: '🛠️' },
+    { value: 'business', label: 'Start a Business', icon: '💼' },
+    { value: 'hobby', label: 'Learn for Hobby', icon: '🎨' },
+    { value: 'academic', label: 'Academic Studies', icon: '📚' },
+    { value: 'freelance', label: 'Learn Freelancing', icon: '💻' },
   ];
 
   return (
@@ -99,7 +99,7 @@ const Register = () => {
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
         </svg>
-        <span className="text-gray-800">হোমে ফিরুন</span>
+        <span className="text-gray-800">Back to Home</span>
       </button>
 
       <div className="max-w-4xl w-full mx-4 relative z-10">
@@ -111,15 +111,15 @@ const Register = () => {
                    background: 'linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%)',
                    boxShadow: '0 20px 60px rgba(14, 165, 233, 0.4)'
                  }}>
-              <span className="text-5xl font-bold text-white">শি</span>
+              <span className="text-5xl font-bold text-white">Sh</span>
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-400 to-blue-400 opacity-30 blur-lg"></div>
             </div>
           </Link>
           <h1 className="text-5xl font-bold mb-3 text-gray-900 tracking-tight">
-            যাত্রা শুরু করুন<span className="text-cyan-600">.</span>
+            Start Your Journey<span className="text-cyan-600">.</span>
           </h1>
-          <p className="text-gray-700 text-lg mb-2">শিখন কমিউনিটির সদস্য হোন</p>
-          <p className="text-gray-600">৩টি সহজ ধাপে অ্যাকাউন্ট তৈরি করুন</p>
+          <p className="text-gray-700 text-lg mb-2">Become a member of Shikkhon community</p>
+          <p className="text-gray-600">Create account in 3 easy steps</p>
         </div>
 
         {/* Progress Steps with Animation */}
@@ -159,11 +159,11 @@ const Register = () => {
               <span className={`text-sm mt-3 font-medium transition-all duration-300 ${
                 step >= stepNum ? 'text-gray-900 scale-105' : 'text-gray-500'
               }`}>
-                {stepNum === 1 ? 'ব্যক্তিগত তথ্য' : stepNum === 2 ? 'অ্যাকাউন্ট তৈরি' : 'নিশ্চিত করুন'}
+                {stepNum === 1 ? 'Personal Info' : stepNum === 2 ? 'Create Account' : 'Confirm'}
               </span>
               {step === stepNum && (
                 <div className="absolute -bottom-6 text-xs text-cyan-600 font-semibold animate-pulse">
-                  ↓ বর্তমান ধাপ
+                  ↓ Current Step
                 </div>
               )}
             </div>
@@ -184,8 +184,8 @@ const Register = () => {
               {step === 1 && (
                 <div className="space-y-8">
                   <div className="text-center mb-6">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2">আপনার পরিচয় দিন</h2>
-                    <p className="text-gray-600">নিচের তথ্যগুলো পূরণ করুন</p>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-2">Introduce Yourself</h2>
+                    <p className="text-gray-600">Fill in the information below</p>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -197,7 +197,7 @@ const Register = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                           </svg>
                         </div>
-                        <label className="text-sm font-medium text-gray-800">পূর্ণ নাম</label>
+                        <label className="text-sm font-medium text-gray-800">Full Name</label>
                       </div>
                       <input
                         type="text"
@@ -211,7 +211,7 @@ const Register = () => {
                           backgroundColor: 'rgba(249, 250, 251, 0.8)',
                           color: '#1f2937'
                         }}
-                        placeholder="আপনার সম্পূর্ণ নাম"
+                        placeholder="Your full name"
                       />
                     </div>
 
@@ -223,7 +223,7 @@ const Register = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                           </svg>
                         </div>
-                        <label className="text-sm font-medium text-gray-800">ইমেইল অ্যাড্রেস</label>
+                        <label className="text-sm font-medium text-gray-800">Email Address</label>
                       </div>
                       <input
                         type="email"
@@ -249,7 +249,7 @@ const Register = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                           </svg>
                         </div>
-                        <label className="text-sm font-medium text-gray-800">মোবাইল নম্বর</label>
+                        <label className="text-sm font-medium text-gray-800">Mobile Number</label>
                       </div>
                       <input
                         type="tel"
@@ -263,7 +263,7 @@ const Register = () => {
                           backgroundColor: 'rgba(249, 250, 251, 0.8)',
                           color: '#1f2937'
                         }}
-                        placeholder="+৮৮০ ১২৩৪ ৫৬৭৮৯০"
+                        placeholder="+880 1234 567890"
                       />
                     </div>
 
@@ -275,7 +275,7 @@ const Register = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                           </svg>
                         </div>
-                        <label className="text-sm font-medium text-gray-800">শিক্ষার লক্ষ্য</label>
+                        <label className="text-sm font-medium text-gray-800">Learning Goal</label>
                       </div>
                       <select
                         name="learningGoal"
@@ -293,7 +293,7 @@ const Register = () => {
                           backgroundSize: '1.5em 1.5em'
                         }}
                       >
-                        <option value="">আপনার লক্ষ্য নির্বাচন করুন</option>
+                        <option value="">Select your goal</option>
                         {learningGoals.map((goal) => (
                           <option key={goal.value} value={goal.value}>
                             {goal.icon} {goal.label}
@@ -305,7 +305,7 @@ const Register = () => {
 
                   {/* Learning Goals Grid */}
                   <div className="mt-6">
-                    <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">জনপ্রিয় লক্ষ্যসমূহ</h3>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">Popular Goals</h3>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                       {learningGoals.map((goal) => (
                         <button
@@ -336,7 +336,7 @@ const Register = () => {
                       }}
                     >
                       <span className="relative z-10 flex items-center justify-center gap-3">
-                        <span>পরবর্তী ধাপ</span>
+                        <span>Next Step</span>
                         <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
@@ -351,8 +351,8 @@ const Register = () => {
               {step === 2 && (
                 <div className="space-y-8">
                   <div className="text-center mb-6">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2">আপনার অ্যাকাউন্ট সুরক্ষিত করুন</h2>
-                    <p className="text-gray-600">একটি শক্তিশালী পাসওয়ার্ড তৈরি করুন</p>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-2">Secure Your Account</h2>
+                    <p className="text-gray-600">Create a strong password</p>
                   </div>
                   
                   <div className="space-y-6">
@@ -364,7 +364,7 @@ const Register = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                           </svg>
                         </div>
-                        <label className="text-sm font-medium text-gray-800">পাসওয়ার্ড</label>
+                        <label className="text-sm font-medium text-gray-800">Password</label>
                       </div>
                       <input
                         type="password"
@@ -378,7 +378,7 @@ const Register = () => {
                           backgroundColor: 'rgba(249, 250, 251, 0.8)',
                           color: '#1f2937'
                         }}
-                        placeholder="অন্তত ৮ অক্ষরের পাসওয়ার্ড"
+                        placeholder="At least 8 characters"
                       />
                       <div className="flex items-center gap-2 mt-3">
                         <div className={`h-2 flex-1 rounded-full transition-all duration-300 ${
@@ -392,7 +392,7 @@ const Register = () => {
                         }`}></div>
                       </div>
                       <p className="text-xs text-gray-600 mt-2">
-                        শক্তিশালী পাসওয়ার্ডের জন্য: ৮+ অক্ষর, বড় হাতের অক্ষর, সংখ্যা প্রয়োজন
+                        For strong password: 8+ characters, uppercase letter, number required
                       </p>
                     </div>
 
@@ -404,7 +404,7 @@ const Register = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                         </div>
-                        <label className="text-sm font-medium text-gray-800">পাসওয়ার্ড নিশ্চিত করুন</label>
+                        <label className="text-sm font-medium text-gray-800">Confirm Password</label>
                       </div>
                       <input
                         type="password"
@@ -420,7 +420,7 @@ const Register = () => {
                           backgroundColor: 'rgba(249, 250, 251, 0.8)',
                           color: '#1f2937'
                         }}
-                        placeholder="পাসওয়ার্ড আবার লিখুন"
+                        placeholder="Re-enter password"
                       />
                       {formData.password && formData.confirmPassword && (
                         <p className={`text-xs mt-2 font-medium ${
@@ -429,8 +429,8 @@ const Register = () => {
                             : 'text-red-600'
                         }`}>
                           {formData.password === formData.confirmPassword 
-                            ? '✓ পাসওয়ার্ড মিলে গেছে' 
-                            : '✗ পাসওয়ার্ড মিলছে না'}
+                            ? '✓ Passwords match' 
+                            : '✗ Passwords do not match'}
                         </p>
                       )}
                     </div>
@@ -464,18 +464,17 @@ const Register = () => {
                           </div>
                           <div>
                             <p className="text-sm text-gray-800">
-                              আমি{' '}
+                              I agree to the{' '}
                               <Link to="/terms" className="text-cyan-600 hover:underline font-medium">
                                 Terms of Service
                               </Link>{' '}
-                              এবং{' '}
+                              and{' '}
                               <Link to="/privacy" className="text-cyan-600 hover:underline font-medium">
                                 Privacy Policy
-                              </Link>{' '}
-                              এর সাথে একমত
+                              </Link>
                             </p>
                             <p className="text-xs text-gray-600 mt-2">
-                              আপনার তথ্য নিরাপদে সংরক্ষণ করা হবে এবং শুধুমাত্র প্ল্যাটফর্ম উন্নয়নের জন্য ব্যবহার করা হবে।
+                              Your information will be stored securely and used only for platform development.
                             </p>
                           </div>
                         </label>
@@ -487,7 +486,7 @@ const Register = () => {
                           className="w-5 h-5 rounded border-gray-300 text-cyan-600 focus:ring-cyan-500"
                         />
                         <label className="ml-2 text-sm text-gray-800">
-                          আমি নিউজলেটার এবং বিশেষ অফার সম্পর্কিত ইমেইল পেতে চাই
+                          I want to receive emails about newsletters and special offers
                         </label>
                       </div>
                     </div>
@@ -508,7 +507,7 @@ const Register = () => {
                         <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
-                        পূর্ববর্তী
+                        Previous
                       </span>
                     </button>
                     <button
@@ -525,7 +524,7 @@ const Register = () => {
                       }}
                     >
                       <span className="relative z-10 flex items-center justify-center gap-3">
-                        <span>পরবর্তী ধাপ</span>
+                        <span>Next Step</span>
                         <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
@@ -545,31 +544,31 @@ const Register = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2">প্রস্তুত! 🎉</h2>
-                    <p className="text-gray-600">আপনার তথ্য পর্যালোচনা করুন এবং শেষ করুন</p>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-2">Ready! 🎉</h2>
+                    <p className="text-gray-600">Review your information and finish</p>
                   </div>
                   
                   {/* Summary Card */}
                   <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-2xl p-8 border border-cyan-100">
-                    <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">আপনার তথ্য</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">Your Information</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-4">
                         <div>
-                          <p className="text-sm text-gray-600 mb-1">নাম</p>
+                          <p className="text-sm text-gray-600 mb-1">Name</p>
                           <p className="font-semibold text-gray-900 text-lg">{formData.fullName || '—'}</p>
                         </div>
                         <div>
-                          <p className="text-sm text-gray-600 mb-1">ইমেইল</p>
+                          <p className="text-sm text-gray-600 mb-1">Email</p>
                           <p className="font-semibold text-gray-900 text-lg">{formData.email || '—'}</p>
                         </div>
                       </div>
                       <div className="space-y-4">
                         <div>
-                          <p className="text-sm text-gray-600 mb-1">ফোন</p>
+                          <p className="text-sm text-gray-600 mb-1">Phone</p>
                           <p className="font-semibold text-gray-900 text-lg">{formData.phone || '—'}</p>
                         </div>
                         <div>
-                          <p className="text-sm text-gray-600 mb-1">লক্ষ্য</p>
+                          <p className="text-sm text-gray-600 mb-1">Goal</p>
                           <p className="font-semibold text-gray-900 text-lg">
                             {learningGoals.find(g => g.value === formData.learningGoal)?.label || '—'}
                           </p>
@@ -579,19 +578,19 @@ const Register = () => {
                     
                     {/* Benefits */}
                     <div className="mt-8 pt-6 border-t border-cyan-100">
-                      <h4 className="font-bold text-gray-900 mb-4 text-center">আপনি যা পাচ্ছেন</h4>
+                      <h4 className="font-bold text-gray-900 mb-4 text-center">What You Get</h4>
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                         <div className="text-center p-3">
                           <div className="text-2xl mb-2">🎓</div>
-                          <p className="text-sm font-medium text-gray-800">১০০+ ফ্রি কোর্স</p>
+                          <p className="text-sm font-medium text-gray-800">100+ Free Courses</p>
                         </div>
                         <div className="text-center p-3">
                           <div className="text-2xl mb-2">📜</div>
-                          <p className="text-sm font-medium text-gray-800">সার্টিফিকেট</p>
+                          <p className="text-sm font-medium text-gray-800">Certificates</p>
                         </div>
                         <div className="text-center p-3">
                           <div className="text-2xl mb-2">👨‍🏫</div>
-                          <p className="text-sm font-medium text-gray-800">বিশেষজ্ঞ প্রশিক্ষক</p>
+                          <p className="text-sm font-medium text-gray-800">Expert Instructors</p>
                         </div>
                       </div>
                     </div>
@@ -599,8 +598,8 @@ const Register = () => {
 
                   <div className="text-center">
                     <p className="text-gray-700 mb-6">
-                      আপনি এখন শিখন কমিউনিটির অংশ হতে যাচ্ছেন। 
-                      রেজিস্ট্রেশন সম্পন্ন করুন এবং আপনার দক্ষতা উন্নয়নের যাত্রা শুরু করুন।
+                      You are about to become a part of Shikkhon community. 
+                      Complete registration and start your skills development journey.
                     </p>
                   </div>
 
@@ -619,7 +618,7 @@ const Register = () => {
                         <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
-                        পূর্ববর্তী
+                        Previous
                       </span>
                     </button>
                     <button
@@ -631,7 +630,7 @@ const Register = () => {
                       }}
                     >
                       <span className="relative z-10 flex items-center justify-center gap-3">
-                        <span>অ্যাকাউন্ট তৈরি করুন</span>
+                        <span>Create Account</span>
                         <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
@@ -646,13 +645,13 @@ const Register = () => {
             {/* Login Link */}
             <div className="text-center mt-10 pt-8 border-t" style={{ borderColor: 'rgba(14, 165, 233, 0.1)' }}>
               <p className="text-gray-700">
-                ইতিমধ্যে অ্যাকাউন্ট আছে?{' '}
+                Already have an account?{' '}
                 <Link
                   to="/login"
                   className="font-semibold transition-all duration-300 hover:text-cyan-700 hover:underline"
                   style={{ color: '#0ea5e9' }}
                 >
-                  লগইন করুন
+                  Login
                 </Link>
               </p>
             </div>

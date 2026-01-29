@@ -1,26 +1,27 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const quickLinks = [
-    { name: 'হোম', path: '/' },
-    { name: 'সকল কোর্স', path: '/courses' },
-    { name: 'ক্যাটাগরি', path: '/categories' },
-    { name: 'ইনস্ট্রাক্টর', path: '/instructors' },
-    { name: 'ব্লগ', path: '/blog' },
+    { name: 'Home', path: '/' },
+    { name: 'All Courses', path: '/courses' },
+    { name: 'Categories', path: '/categories' },
+    { name: 'Instructors', path: '/instructors' },
+    { name: 'Blog', path: '/blog' },
   ];
 
   const categories = [
-    'কৃষি ও ফার্মিং',
-    'প্রোগ্রামিং ও টেক',
-    'একাডেমিক শিক্ষা',
-    'দক্ষতা উন্নয়ন',
-    'ব্যবসা পরিচালনা',
+    'Agriculture & Farming',
+    'Programming & Tech',
+    'Academic Education',
+    'Skill Development',
+    'Business Management',
   ];
 
   const contactInfo = [
     { icon: '📧', text: 'support@shikkhon.com' },
-    { icon: '📞', text: '+৮৮০ ১২৩৪ ৫৬৭৮৯০' },
+    { icon: '📞', text: '+880 1234 567890' },
   ];
 
   return (
@@ -34,15 +35,15 @@ const Footer = () => {
                 style={{ backgroundColor: 'rgb(229,230,250)' }} 
                 className="w-10 h-10 rounded-lg flex items-center justify-center"
               >
-                <span className="font-bold text-xl" style={{ color: '#4F46E5' }}>শি</span>
+                <span className="font-bold text-xl" style={{ color: '#4F46E5' }}>Sh</span>
               </div>
               <div>
-                <h2 className="text-xl font-bold" style={{ color: '#4F46E5' }}>শিখন</h2>
+                <h2 className="text-xl font-bold" style={{ color: '#4F46E5' }}>Shikkhon</h2>
                 <p className="text-xs text-gray-600">E-Learning Platform</p>
               </div>
             </div>
             <p className="text-gray-700 text-sm mb-4">
-              বাংলাদেশের সর্ববৃহৎ ই-লার্নিং প্লাটফর্ম।
+              Largest E-Learning Platform in Bangladesh.
             </p>
             <div className="flex space-x-3">
               {['Twitter', 'YouTube', 'Facebook', 'LinkedIn'].map((platform, idx) => (
@@ -60,7 +61,7 @@ const Footer = () => {
 
           {/* Quick Links - Compact */}
           <div>
-            <h3 className="footer-title text-base font-bold mb-4" style={{ color: '#4F46E5' }}>দ্রুত লিঙ্ক</h3>
+            <h3 className="footer-title text-base font-bold mb-4" style={{ color: '#4F46E5' }}>Quick Links</h3>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -77,7 +78,7 @@ const Footer = () => {
 
           {/* Categories - Compact */}
           <div>
-            <h3 className="footer-title text-base font-bold mb-4" style={{ color: '#4F46E5' }}>ক্যাটাগরি</h3>
+            <h3 className="footer-title text-base font-bold mb-4" style={{ color: '#4F46E5' }}>Categories</h3>
             <ul className="space-y-2">
               {categories.map((category, index) => (
                 <li key={index}>
@@ -94,7 +95,7 @@ const Footer = () => {
 
           {/* Contact Info - Compact */}
           <div>
-            <h3 className="footer-title text-base font-bold mb-4" style={{ color: '#4F46E5' }}>যোগাযোগ</h3>
+            <h3 className="footer-title text-base font-bold mb-4" style={{ color: '#4F46E5' }}>Contact</h3>
             <ul className="space-y-3 mb-4">
               {contactInfo.map((info, index) => (
                 <li key={index} className="flex items-center space-x-2">
@@ -106,11 +107,11 @@ const Footer = () => {
             
             {/* Newsletter Subscription - Compact */}
             <div>
-              <h4 className="font-bold mb-3 text-sm">নিউজলেটার</h4>
+              <h4 className="font-bold mb-3 text-sm">Newsletter</h4>
               <div className="flex">
                 <input 
                   type="email" 
-                  placeholder="ইমেইল" 
+                  placeholder="Email" 
                   className="input w-full max-w-xs rounded-r-none text-sm py-2"
                   style={{ 
                     backgroundColor: 'rgb(229,230,250)', 
@@ -125,7 +126,7 @@ const Footer = () => {
                     height: '36px'
                   }}
                 >
-                  সাবস্ক্রাইব
+                  Subscribe
                 </button>
               </div>
             </div>
@@ -136,19 +137,19 @@ const Footer = () => {
         <div className="border-t mt-8 pt-6" style={{ borderColor: 'rgb(229,230,250)' }}>
           <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
             <div className="text-gray-600 text-xs">
-              © ২০২৪ শিখন. সর্বস্বত্ব সংরক্ষিত।
+              © 2024 Shikkhon. All rights reserved.
             </div>
             <div className="flex flex-wrap gap-3 text-xs text-gray-600">
-              <a href="#" className="hover:text-gray-900 transition-colors duration-200">প্রাইভেসি</a>
-              <a href="#" className="hover:text-gray-900 transition-colors duration-200">টার্মস</a>
-              <a href="#" className="hover:text-gray-900 transition-colors duration-200">রিফান্ড</a>
-              <a href="#" className="hover:text-gray-900 transition-colors duration-200">সাইটম্যাপ</a>
+              <a href="#" className="hover:text-gray-900 transition-colors duration-200">Privacy</a>
+              <a href="#" className="hover:text-gray-900 transition-colors duration-200">Terms</a>
+              <a href="#" className="hover:text-gray-900 transition-colors duration-200">Refund</a>
+              <a href="#" className="hover:text-gray-900 transition-colors duration-200">Sitemap</a>
             </div>
           </div>
           
           {/* Payment Methods - Compact */}
           <div className="mt-4 flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
-            <div className="text-gray-600 text-xs">পেমেন্ট মেথড:</div>
+            <div className="text-gray-600 text-xs">Payment Methods:</div>
             <div className="flex space-x-2">
               {['bKash', 'Nagad', 'Rocket', 'Card'].map((method, idx) => (
                 <div 
