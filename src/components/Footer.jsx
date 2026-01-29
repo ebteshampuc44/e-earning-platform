@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -28,14 +27,19 @@ const Footer = () => {
     <footer style={{ backgroundColor: 'rgb(233,231,253)' }} className="text-gray-900 py-8 px-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Brand Info - Compact */}
+          {/* Brand Info - Compact with Bigger Logo */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
+              {/* Bigger Logo Container */}
               <div 
                 style={{ backgroundColor: 'rgb(229,230,250)' }} 
-                className="w-10 h-10 rounded-lg flex items-center justify-center"
+                className="w-16 h-16 rounded-lg flex items-center justify-center p-2"
               >
-                <span className="font-bold text-xl" style={{ color: '#4F46E5' }}>Sh</span>
+                <img 
+                  src="https://i.ibb.co.com/rKTD0YgT/unnamed-removebg-preview.png" 
+                  alt="Shikkhon Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h2 className="text-xl font-bold" style={{ color: '#4F46E5' }}>Shikkhon</h2>

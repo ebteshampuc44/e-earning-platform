@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -34,7 +33,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 py-2.5">
           <div className="flex justify-between items-center">
-            {/* Compact Logo */}
+            {/* Compact Logo with Image */}
             <Link to="/" className="flex items-center space-x-2.5 z-20 group">
               <div 
                 className="w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110"
@@ -43,7 +42,11 @@ const Navbar = () => {
                   boxShadow: '0 4px 12px rgba(79, 70, 229, 0.3)'
                 }}
               >
-                <span className="font-bold text-lg text-white">Sh</span>
+                <img 
+                  src="https://i.ibb.co.com/rKTD0YgT/unnamed-removebg-preview.png" 
+                  alt="Shikkhon Logo" 
+                  className="w-full h-full object-contain p-1"
+                />
               </div>
               <div>
                 <h1 
